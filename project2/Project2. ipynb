@@ -149,7 +149,7 @@
    "metadata": {},
    "source": [
     "## Data Preprocessing\n",
-    "To prepare the data for modeling, it must be cleaned and transformed. This involves handling missing values, encoding categorical variables, and creating new features that might enhance model performance."
+    "To prepare the data for modeling, it must be cleaned and transformed. This involves handling missing values, encoding categorical variables, and creating new features that might enhance model performance. The OCCUPATION_TYPE column contains many missing values, which need to be addressed during preprocessing to maintain data quality and model accuracy. STATUS values of 2, 3, 4, and 5 indicate clients with increasingly severe overdue payments, making them higher risk for default."
    ]
   },
   {
@@ -504,7 +504,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "The Random Forest model provides a high accuracy of 97.87%, which indicates that it performs well in predicting 'good' clients. However, the classification report shows that the model struggles to correctly classify 'bad' clients, primarily due to the class imbalance in the dataset. The model's ability to detect 'bad' clients (recall and precision) is significantly lower, which can be a concern in a real-world application where identifying high-risk clients is critical.\n",
+    "The Random Forest model provides a high accuracy of 97.87%, which indicates that it performs well in predicting 'good' clients. However, the classification report shows that the model struggles to correctly classify 'bad' clients, primarily due to the class imbalance in the dataset. The model's lower recall and precision for detecting 'bad' clients is concerning for real-world applications, as it may miss identifying high-risk individuals.\n",
     "\n",
     "For financial institutions, the ability to correctly identify 'bad' clients is as important as identifying 'good' ones. Although the Random Forest model shows high overall accuracy, its lower performance in identifying 'bad' clients suggests that additional measures, such as re-sampling techniques or adjusting the decision threshold, may be necessary to improve the model's effectiveness. A model that consistently misses high-risk clients could lead to increased default rates and financial losses."
    ]
