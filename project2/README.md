@@ -41,6 +41,7 @@ The project consists of the following key components:
 5. Launch jupyter notebook
 
 
-## Team Members
-@huixincai @rafaelperez @khollah1 @whisperfool
+## Team Members & Videos 
+@huixincai   https://youtu.be/WgC0aezI-Jw?si=9zcU5WnvQLTMVFYV
+@rafaelperez @khollah1 @whisperfool
 
